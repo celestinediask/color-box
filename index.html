@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn JS</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+        #color-box {
+
+            height: 98vh;
+            border-style: solid;
+            border-width: 0.5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="color-box">
+        <button id="red-button" onclick="changeColor('red')">Red</button>
+        <button id="green-button" onclick="changeColor('green')">Green</button>
+        <button id="blue-button" onclick="changeColor('blue')">Blue</button>
+    </div>
+
+
+    <script>
+
+        function changeColor(color) {
+            document.getElementById('color-box').style.backgroundColor = color;
+        }
+
+    </script>
+</body>
+
+</html>
